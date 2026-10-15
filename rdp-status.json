@@ -1,23 +1,23 @@
 {
-  "active": false,
+  "active": true,
   "hostname": "rdpfree-2",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
+    "disk_free_gb": 79.3,
     "cpu_threads": 4,
-    "ram_gb": 16.0,
-    "disk_free_gb": 79.0
+    "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-15T02:46:38Z",
-  "expires_at": "2026-10-15T08:41:38Z",
+  "started_at": "2026-10-15T02:53:20Z",
+  "expires_at": "2026-10-15T08:48:20Z",
   "duration_menit": 355,
   "run_id": "38672754963",
-  "run_attempt": "1",
+  "run_attempt": "2",
   "run_number": "2",
   "run_url": "https://github.com/Nakada144ok/Bebasaja/actions/runs/38672754963",
   "mode": "bersih+win10",
@@ -41,70 +41,17 @@
   "akses": {
     "mode": "tailscale",
     "tailscale": {
+      "ip": "100.92.83.93",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
       "status": "ok",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
+      "hostname": "rdpfree-2",
+      "magicdns": "rdpfree-2.taildb58c9.ts.net."
     }
   },
   "media": {
-    "audio_output": "rdp_playback_enabled",
-    "wallpaper": "xyverse_configured_for_user_logon",
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "microphone": "rdp_capture_enabled"
-  },
-  "samp": {
-    "directx": "verified_x86_x64",
-    "netfx3": "Enabled",
-    "status": "dependencies_ready",
-    "samp_installed": false,
-    "directplay": "Enabled",
-    "vcredist": "verified_x86_x64_and_2013_x86",
-    "gta_installed": false,
-    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-    "play_tested": false
-  },
-  "games": {
-    "minecraft_java": {
-      "status": "installer_ready",
-      "compatibility": "Launcher resmi mengelola runtime Java. Akun berlisensi dan dukungan OpenGL/GPU tetap diperlukan.",
-      "path": "C:\\Users\\Public\\Desktop\\RdpFree Installers\\MinecraftInstaller.msi",
-      "note": "Buka installer di sesi Windows, login dengan akun berlisensi, lalu uji game. Belum berarti game sudah berjalan."
-    },
-    "samp": {
-      "status": "dependencies_ready",
-      "gta_installed": false,
-      "game_dir": null,
-      "samp_installed": false,
-      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji."
-    },
-    "minecraft_bedrock": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
-    "roblox": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    }
-  },
-  "game_environment": {
-    "play_tested": false,
-    "os": "Microsoft Windows Server 2022 Datacenter",
-    "hypervisor_present": true,
-    "windows_server": true,
-    "runner": "windows-2022"
-  },
-  "host_tools": {
-    "winrar": "failed",
-    "vcredist": "verified_current_v14_x86_x64",
-    "xampp": "verified_files_php_apache_config_mariadb_version; services not started",
-    "firewall7777": "verified_TCP_UDP_inbound_rules; not_public_forwarding",
-    "errors": [
-      "WinRAR: Download failed: https://www.rarlab.com/rar/winrar-x64-723.exe"
-    ],
-    "public_port": false
-  },
-  "stopped_at": "2026-10-15T02:50:53Z"
+    "microphone": "rdp_capture_enabled",
+    "wallpaper": "xyverse_configured_for_user_logon",
+    "audio_output": "rdp_playback_enabled"
+  }
 }
