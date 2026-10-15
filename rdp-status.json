@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "hostname": "rdpfree-2",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
@@ -42,10 +42,11 @@
     "mode": "tailscale",
     "tailscale": {
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "ip": "100.82.237.83",
-      "magicdns": "rdpfree-2.taildb58c9.ts.net.",
-      "hostname": "rdpfree-2",
-      "status": "ok"
+      "status": "ok",
+      "ip": "",
+      "magicdns": "",
+      "hostname": "",
+      "funnel_addr": ""
     }
   },
   "media": {
@@ -53,5 +54,57 @@
     "wallpaper": "xyverse_configured_for_user_logon",
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "microphone": "rdp_capture_enabled"
-  }
+  },
+  "samp": {
+    "directx": "verified_x86_x64",
+    "netfx3": "Enabled",
+    "status": "dependencies_ready",
+    "samp_installed": false,
+    "directplay": "Enabled",
+    "vcredist": "verified_x86_x64_and_2013_x86",
+    "gta_installed": false,
+    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
+    "play_tested": false
+  },
+  "games": {
+    "minecraft_java": {
+      "status": "installer_ready",
+      "compatibility": "Launcher resmi mengelola runtime Java. Akun berlisensi dan dukungan OpenGL/GPU tetap diperlukan.",
+      "path": "C:\\Users\\Public\\Desktop\\RdpFree Installers\\MinecraftInstaller.msi",
+      "note": "Buka installer di sesi Windows, login dengan akun berlisensi, lalu uji game. Belum berarti game sudah berjalan."
+    },
+    "samp": {
+      "status": "dependencies_ready",
+      "gta_installed": false,
+      "game_dir": null,
+      "samp_installed": false,
+      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji."
+    },
+    "minecraft_bedrock": {
+      "note": "Tidak dipilih",
+      "status": "disabled"
+    },
+    "roblox": {
+      "note": "Tidak dipilih",
+      "status": "disabled"
+    }
+  },
+  "game_environment": {
+    "play_tested": false,
+    "os": "Microsoft Windows Server 2022 Datacenter",
+    "hypervisor_present": true,
+    "windows_server": true,
+    "runner": "windows-2022"
+  },
+  "host_tools": {
+    "winrar": "failed",
+    "vcredist": "verified_current_v14_x86_x64",
+    "xampp": "verified_files_php_apache_config_mariadb_version; services not started",
+    "firewall7777": "verified_TCP_UDP_inbound_rules; not_public_forwarding",
+    "errors": [
+      "WinRAR: Download failed: https://www.rarlab.com/rar/winrar-x64-723.exe"
+    ],
+    "public_port": false
+  },
+  "stopped_at": "2026-10-15T02:50:53Z"
 }
