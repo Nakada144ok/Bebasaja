@@ -1,23 +1,23 @@
 {
-  "active": false,
+  "active": true,
   "hostname": "nakada-1",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "ram_gb": 16.0,
-    "disk_free_gb": 82.9,
-    "cpu_threads": 4
+    "disk_free_gb": 82.7,
+    "cpu_threads": 4,
+    "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-16T03:47:26Z",
-  "expires_at": "2026-10-16T09:42:26Z",
+  "started_at": "2026-10-16T10:17:38Z",
+  "expires_at": "2026-10-16T16:12:38Z",
   "duration_menit": 355,
   "run_id": "38661800888",
-  "run_attempt": "3",
+  "run_attempt": "4",
   "run_number": "1",
   "run_url": "https://github.com/Nakada144ok/Bebasaja/actions/runs/38661800888",
   "mode": "bersih+win10",
@@ -39,86 +39,19 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "mode": "tailscale",
     "tailscale": {
-      "status": "ok",
+      "magicdns": "nakada-1.taildb58c9.ts.net.",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
-    }
+      "ip": "100.66.111.69",
+      "hostname": "Nakada-1",
+      "status": "ok"
+    },
+    "mode": "tailscale"
   },
   "media": {
-    "microphone": "rdp_capture_enabled",
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "wallpaper": "xyverse_configured_for_user_logon",
-    "audio_output": "rdp_playback_enabled"
-  },
-  "win10": {
-    "look": "ok",
-    "badge": "ok",
-    "wallpaper": "ok",
-    "search": "ok",
-    "os": "Microsoft Windows Server 2022 Datacenter",
-    "note": "Tampilan Windows 10 (UI Windows Server 2022 = kernel/UI Windows 10 21H2)"
-  },
-  "extras": {
-    "lightshot": "ok",
-    "translucent": "disabled",
-    "wallpaper": "ok",
-    "wallpaper_file": "wallpaper.jpg",
-    "vscode": "skip",
-    "notepadpp": "skip",
-    "admin": true
-  },
-  "samp": {
-    "gta_installed": false,
-    "netfx3": "Enabled",
-    "directx": "verified_x86_x64",
-    "directplay": "Enabled",
-    "vcredist": "verified_x86_x64_and_2013_x86",
-    "play_tested": false,
-    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-    "status": "dependencies_ready",
-    "samp_installed": false
-  },
-  "games": {
-    "minecraft_java": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
-    "roblox": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
-    "samp": {
-      "game_dir": null,
-      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
-      "samp_installed": false,
-      "gta_installed": false,
-      "status": "dependencies_ready"
-    },
-    "minecraft_bedrock": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    }
-  },
-  "game_environment": {
-    "windows_server": true,
-    "os": "Microsoft Windows Server 2022 Datacenter",
-    "runner": "windows-2022",
-    "play_tested": false,
-    "hypervisor_present": true
-  },
-  "host_tools": {
-    "winrar": "verified 7.23.0 (vendor trial; license not included)",
-    "vcredist": "verified_current_v14_x86_x64",
-    "xampp": "verified_files_php_apache_config_mariadb_version; services not started",
-    "firewall7777": "verified_TCP_UDP_inbound_rules; not_public_forwarding",
-    "errors": [],
-    "public_port": false
-  },
-  "heartbeat_at": "2026-10-16T04:17:12.2933457Z",
-  "stopped_at": "2026-10-16T04:22:17Z"
+    "audio_output": "rdp_playback_enabled",
+    "microphone": "rdp_capture_enabled",
+    "wallpaper": "xyverse_configured_for_user_logon"
+  }
 }
