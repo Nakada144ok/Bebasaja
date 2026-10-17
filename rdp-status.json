@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "hostname": "nakada-1",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
@@ -40,11 +40,12 @@
   },
   "akses": {
     "tailscale": {
-      "hostname": "Nakada-1",
       "status": "ok",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "ip": "100.103.32.72",
-      "magicdns": "nakada-1.taildb58c9.ts.net."
+      "ip": "",
+      "magicdns": "",
+      "hostname": "",
+      "funnel_addr": ""
     },
     "mode": "tailscale"
   },
@@ -118,5 +119,6 @@
     "errors": [],
     "public_port": false
   },
-  "heartbeat_at": "2026-10-17T00:17:10.0538227Z"
+  "heartbeat_at": "2026-10-17T00:17:10.0538227Z",
+  "stopped_at": "2026-10-17T00:18:45Z"
 }
